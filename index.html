@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!--Enlaces para la fuente e íconos de la página-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+  <!--Enlaces de la hoja de estilos y el ícono de la página-->
+  <link rel="stylesheet" href="css/styles(Home).css">
+  <link rel="icon" href="images/DonGil.ico">
+
+  <!--Enlace para el Swiper-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <title>Bodegita Don Gil</title>
+</head>
+
+<body>
+  <!--NAVBAR-->
+  <header>
+    <div class="container nav__container">
+      <div class="nav__left">
+        <div class="nav__logo">
+          <a href=""><img src="images/DonGilLogo.png"></a>
+        </div>
+        <div class="text__logo">
+          <a href="home.html">
+            <p>La Bodegita de Don Gil</p>
+          </a>
+        </div>
+      </div>
+      <div class="nav__right">
+        <ul class="nav__menu">
+          <li><a href=""><i class="uil uil-user-circle"></i> Mi Cuenta <i class="uil uil-angle-down"></i></a></li>
+          <li><a href=""><i class="uil uil-shopping-cart"></i> Mi Carrito</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="container categorias__container">
+    <nav class="nav__categorias">
+      <ul>
+        <li><a href="">CARNES, AVES Y PESCADOS</a></li>
+        <li><a href="">LÁCTEOS</a></li>
+        <li><a href="">CONGELADOS</a></li>
+        <li><a href="">FRUTAS Y VERDURAS</a></li>
+        <li><a href="">PANADERÍA Y PASTELERÍA</a></li>
+        <li><a href="">BEBIDAS</a></li>
+        <li><a href="">CUIDADO PERSONAL</a></li>
+        <li><a href="">LIMPIEZA</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container info__promos"><h2>LAS MEJORES OFERTAS</h2></div>
+  <section class="container promos__container mySwiper">
+    <div class="swiper-wrapper">
+      <div class="promos swiper-slide start">Slide 1</div>
+      <div class="promos swiper-slide">Slide 2</div>
+      <div class="promos swiper-slide">Slide 3</div>
+      <div class="promos swiper-slide">Slide 4</div>
+      <div class="promos swiper-slide end">Slide 5</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <!--JS para el Swiper-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 0,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+</body>
+
+</html>
