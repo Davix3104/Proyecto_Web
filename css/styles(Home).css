@@ -95,22 +95,20 @@ header {
 
 /*---NAVBAR CATEGORÍAS--*/
 .categorias__container {
-  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
   height: 2rem;
   position: relative;
   top: 8.5rem;
   width: 100%;
 }
 
-.nav__categorias {
-  margin-left: 5.5rem;
-  padding: 3px;
-}
-
 .nav__categorias ul {
   align-items: center;
   display: flex;
-  gap: 25px;
+  gap: 29px;
   list-style: none;
 }
 
