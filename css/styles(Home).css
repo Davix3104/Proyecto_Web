@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   background: rgb(233, 231, 231);
   color: black;
@@ -95,14 +96,16 @@ header {
 
 /*---NAVBAR CATEGORÍAS--*/
 .categorias__container {
-  display: flex;
-  justify-content: center;
   align-items: center;
   background: black;
+  clear: both;
+  display: grid;
   height: 2rem;
-  position: relative;
+  justify-content: center;
+  position: fixed;
   top: 8.5rem;
   width: 100%;
+  z-index: 2;
 }
 
 .nav__categorias ul {
@@ -112,12 +115,59 @@ header {
   list-style: none;
 }
 
-.nav__categorias a {
+.categoria::before{
+  content: '';
+  display: block;
+  left: 5%;
+  position: absolute;
+  top: 80%;
+  width: 0%;
+  height: 6px;
+  background-color: transparent;
+  transition: width 0.2s;
+}
+
+.categoria:hover::before{
+  width: 90%;
+}
+
+.categoria{
   color: white;
 }
 
-.nav__categorias a:hover {
+.categoria:hover {
   color: blueviolet;
+}
+
+/*--SUB-CATEGORÍAS--*/
+.container__desplegable{
+  display: none;
+}
+
+.container__desplegable ul{ 
+  background-color: rgb(233, 224, 224);
+  border-radius: 5px;
+  box-shadow: -15px 15px 10px -10px rgba(0, 0, 0, 0.5),
+              15px 15px 10px -10px rgba(0,0,0,0.5);
+  display: grid;
+  left: 4.5%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  list-style: none;
+  padding: 1rem 1rem 1rem ;
+  position: absolute;
+  top: 2rem;
+  width: 91%;
+  z-index: 2;
+}
+
+.container__desplegable li a{
+  color: black;
+  display: block;
+}
+
+.menu__categorias li:hover .container__desplegable{
+  display: block;
 }
 
 /*--PROMOCIONES--*/
@@ -130,7 +180,7 @@ header {
   padding: 12px 24px;
   position: relative;
   text-align: center;
-  top: 10rem;
+  top: 11.5rem;
   width: 90%;
 }
 
@@ -141,7 +191,7 @@ header {
   height: 20rem;
   overflow: hidden;
   position: relative;
-  top: 10rem;
+  top: 11.5rem;
   width: 90%;
 }
 
@@ -154,16 +204,21 @@ header {
   height: 20rem;
   position: relative;
   text-align: center;
-  top: 12rem;
+  top: 12.5rem;
   width: 90%;
 }
 
-.ofertas__info {
-  background: rgb(11, 3, 231);
+.info__ofertas {
+  background: rgb(28, 37, 173);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   color: white;
-  padding: 12px;
+  height: 3rem;
+  padding: 12px 24px;
+  position: relative;
+  text-align: center;
+  top: 12.5rem;
+  width: 90%;
 }
 
 .ofertas__slides{
@@ -176,12 +231,15 @@ header {
 }
 
 /*--FOOTER--*/
-
 footer {
   background: rgb(163, 133, 133);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 14rem;
   padding: 2rem;
+  height: 13rem;
   position: relative;
-  top: 18rem;
 }
 
 .footer__container{
