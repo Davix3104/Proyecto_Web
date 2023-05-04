@@ -8,7 +8,7 @@
 }
 
 body {
-  background: rgb(233, 231, 231);
+  background: rgb(224, 222, 222);
   color: black;
   font-family: "Ubuntu", sans-serif;
 }
@@ -32,7 +32,7 @@ html::-webkit-scrollbar-thumb {
 /*--NAVBAR--*/
 header {
   background: rgb(0, 0, 0);
-  height: 6.5rem;
+  height: 5.5rem;
   position: fixed;
   top: 0;
   width: 100%;
@@ -78,15 +78,72 @@ header {
   font-size: 24px;
 }
 
-.nav__menu a {
+.nav__menu .cuenta{
+  cursor: default;
+}
+
+.nav__menu a, .nav__menu li {
   font-size: 16px;
   color: white;
   font-weight: bold;
 }
 
-.nav__menu a:hover,
-.nav__menu i:hover {
+.nav__menu li:hover,
+.nav__menu a:hover {
   color: blueviolet;
+}
+
+.nav__menu .cuenta::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 61%;
+  width: 10%;
+  height: 1.6rem;
+  background-color: transparent;
+}
+
+/*--APARTADO DE CUENTA--*/
+.login__desplegable{
+  display: none;
+}
+
+.login__desplegable ul{ 
+  background-color: rgb(233, 224, 224);
+  border-radius: 10px;
+  box-shadow: -15px 15px 10px -10px rgba(0, 0, 0, 0.5),
+              15px 15px 10px -10px rgba(0,0,0,0.5);
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  list-style: none;
+  margin-left: -1.5rem;
+  padding: 1rem;
+  position: absolute;
+  top: 4.8rem;
+  z-index: 1456;
+}
+
+.login__desplegable a{
+  color: black;
+  display: block;
+  font-weight: lighter;
+}
+
+.login__desplegable::before{
+  content: "";
+  display: block;
+  background: rgb(233, 224, 224);
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 4.2rem;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.nav__menu .cuenta:hover .login__desplegable{
+  display: block;
 }
 
 /*---NAVBAR CATEGORÍAS--*/
@@ -95,18 +152,18 @@ header {
   background: black;
   clear: both;
   display: grid;
-  height: 2.5rem;
+  height: 3.5rem;
   justify-content: center;
   position: fixed;
-  top: 6.5rem;
+  top: 5.5rem;
   width: 100%;
-  z-index: 11;
+  z-index: 3;
 }
 
 .nav__categorias ul {
   align-items: center;
   display: flex;
-  gap: 29px;
+  gap: 30px;
   list-style: none;
 }
 
@@ -115,11 +172,11 @@ header {
   display: block;
   left: 5%;
   position: absolute;
-  top: 70%;
+  top: 65%;
   width: 0%;
-  height: 12px;
+  height: 20px;
   background-color: transparent;
-  transition: width 0.2s;
+  transition: width 0.1s;
 }
 
 .categoria:hover::before{
@@ -141,6 +198,7 @@ header {
 
 .container__desplegable ul{ 
   background-color: rgb(233, 224, 224);
+  border: 0.5px rgba(0, 0, 0, 0.2) solid;
   border-radius: 5px;
   box-shadow: -15px 15px 10px -10px rgba(0, 0, 0, 0.5),
               15px 15px 10px -10px rgba(0,0,0,0.5);
@@ -151,7 +209,7 @@ header {
   list-style: none;
   padding: 1rem 1rem 1rem ;
   position: absolute;
-  top: 2.5rem;
+  top: 3.5rem;
   width: 91%;
   z-index: 2;
 }
@@ -159,6 +217,19 @@ header {
 .container__desplegable li a{
   color: black;
   display: block;
+}
+
+.container__desplegable::before{
+  content: "";
+  display: block;
+  background: rgb(233, 224, 224);
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 2%;
+  top: 3rem;
+  position: absolute;
+  transform: rotate(45deg);
+  z-index: 3;
 }
 
 .menu__categorias li:hover .container__desplegable{
@@ -177,6 +248,7 @@ header {
   text-align: center;
   top: 10.5rem;
   width: 90%;
+  z-index: 2;
 }
 
 .promos__container {
@@ -188,10 +260,12 @@ header {
   position: relative;
   top: 10.5rem;
   width: 90%;
+  z-index: 2;
 }
 
 .swiper-slide {
   padding: 2rem;
+  z-index: 2;
 }
 
 /*--OFERTAS (PACKS POR SEMANA)--*/
@@ -201,6 +275,7 @@ header {
   text-align: center;
   top: 12.5rem;
   width: 90%;
+  z-index: 2;
 }
 
 .info__ofertas {
@@ -214,6 +289,7 @@ header {
   text-align: center;
   top: 12.5rem;
   width: 90%;
+  z-index: 2;
 }
 
 .ofertas__slides{
@@ -223,6 +299,7 @@ header {
   height: 20rem;
   overflow: hidden;
   position: relative;
+  z-index: 2;
 }
 
 /*--FOOTER--*/
