@@ -347,7 +347,8 @@ input[type="submit"]:hover {
 
 /*--REGISTRO--*/
 .register__container{
-  display: block ;
+  display: none ;
+  text-align: center;
   background: transparent;
   backdrop-filter: blur(15px);
   border-radius: 12px;
@@ -357,7 +358,9 @@ input[type="submit"]:hover {
   position: absolute;
   left: 60%;
   top: 23.5%;
-  width: 450px;
+  width: 470px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .register__container h1{
@@ -486,7 +489,6 @@ input[type="submit"]:hover {
   font-weight: bold;
 }
 
-/*--Enlace para ver si funca xd
-#btn__regis:checked ~ .register__container{
-  display: block;
-}--*/
+.register__container input[type="submit"]{
+  width: 85%;
+}
