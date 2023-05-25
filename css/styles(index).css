@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(150deg, #772a7e #f3f3f3);
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 85%;
+}
+
+/*--SCROLLBAR--*/
+html::-webkit-scrollbar {
+  width: 12px;
+  background: rgb(182, 178, 197);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #772a7e;
+  border-radius: 6px;
+}
+
+/*--NAVBAR--*/
+header {
+  background: rgb(0, 0, 0);
+  height: 5.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+}
+
+.nav__container {
+  align-items: center;
+  display: grid;
+  height: 100%;
+  grid-template-areas: "nav__logo nav__right";
+  justify-content: space-between;
+  width: 90%;
+}
+
+.nav__logo{
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__logo img {
+  background: white;
+  border-radius: 100%;
+  width: 65px;
+}
+
+.nav__logo p{  
+  color: rgb(255, 255, 255);
+  font-family: "Dancing Script", cursive;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav__menu {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav__menu i {
+  font-size: 24px;
+}
+
+.nav__menu .cuenta{
+  cursor: default;
+}
+
+.nav__menu a, .nav__menu li {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+.nav__menu li:hover,
+.nav__menu a:hover {
+  color: blueviolet;
+}
+
+.nav__menu .cuenta::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 61%;
+  width: 10%;
+  height: 1.6rem;
+  background-color: transparent;
+}
+
+/*--APARTADO DE CUENTA--*/
+.login__desplegable{
+  display: none;
+}
+
+.login__desplegable ul{ 
+  background-color: rgb(233, 224, 224);
+  border-radius: 10px;
+  box-shadow: -15px 15px 10px -10px rgba(0, 0, 0, 0.5),
+              15px 15px 10px -10px rgba(0,0,0,0.5);
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  list-style: none;
+  margin-left: -1.5rem;
+  padding: 1rem;
+  position: absolute;
+  top: 4.8rem;
+  z-index: 1456;
+}
+
+.login__desplegable a{
+  color: black;
+  display: block;
+  font-weight: lighter;
+}
+
+.login__desplegable::before{
+  content: "";
+  display: block;
+  background: rgb(233, 224, 224);
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 4.2rem;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.nav__menu .cuenta:hover .login__desplegable{
+  display: block;
+}
+
+/*---NAVBAR CATEGORÍAS--*/
+.categorias__container {
+  align-items: center;
+  background: black;
+  clear: both;
+  display: grid;
+  height: 3.5rem;
+  justify-content: center;
+  position: fixed;
+  top: 5.5rem;
+  width: 100%;
+  z-index: 3;
+}
+
+.nav__categorias ul {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.categoria::before{
+  content: '';
+  display: block;
+  left: 5%;
+  position: absolute;
+  top: 65%;
+  width: 0%;
+  height: 20px;
+  background-color: transparent;
+  transition: width 0.1s;
+}
+
+.categoria:hover::before{
+  width: 90%;
+}
+
+.categoria{
+  color: white;
+}
+
+.categoria:hover {
+  color: blueviolet;
+}
+
+/*--SUB-CATEGORÍAS--*/
+.container__desplegable{
+  display: none;
+}
+
+.container__desplegable ul{ 
+  background-color: rgb(233, 224, 224);
+  border: 0.5px rgba(0, 0, 0, 0.2) solid;
+  border-radius: 5px;
+  box-shadow: -15px 15px 10px -10px rgba(0, 0, 0, 0.5),
+              15px 15px 10px -10px rgba(0,0,0,0.5);
+  display: grid;
+  left: 4.5%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  list-style: none;
+  padding: 1rem 1rem 1rem ;
+  position: absolute;
+  top: 3.5rem;
+  width: 91%;
+  z-index: 2;
+}
+
+.container__desplegable li a{
+  color: black;
+  display: block;
+}
+
+.container__desplegable::before{
+  content: "";
+  display: block;
+  background: rgb(233, 224, 224);
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.5%;
+  top: 3rem;
+  position: absolute;
+  transform: rotate(45deg);
+  z-index: 3;
+}
+
+.menu__categorias li:hover .container__desplegable{
+  display: block;
+}
+
+/*--PROMOCIONES--*/
+.info__promos {
+  background: rgb(101, 17, 179);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  height: 3rem;
+  padding: 12px 24px;
+  position: relative;
+  text-align: center;
+  top: 10.5rem;
+  width: 90%;
+  z-index: 2;
+}
+
+.promos__container {
+  background: rgb(202, 145, 255);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 20rem;
+  overflow: hidden;
+  position: relative;
+  top: 10.5rem;
+  width: 90%;
+  z-index: 2;
+}
+
+.swiper-slide {
+  padding: 2rem;
+  z-index: 2;
+}
+
+/*--OFERTAS (PACKS POR SEMANA)--*/
+.ofertas__container {
+  height: 20rem;
+  position: relative;
+  text-align: center;
+  top: 12.5rem;
+  width: 90%;
+  z-index: 2;
+}
+
+.info__ofertas {
+  background: rgb(28, 37, 173);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  height: 3rem;
+  padding: 12px 24px;
+  position: relative;
+  text-align: center;
+  top: 12.5rem;
+  width: 90%;
+  z-index: 2;
+}
+
+.ofertas__slides{
+  background: rgb(137, 133, 240);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 20rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+/*--FOOTER--*/
+footer {
+  background: rgb(163, 133, 133);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 14.5rem;
+  padding: 2rem;
+  height: 13rem;
+  position: relative;
+}
+
+.footer__container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+}
+
+
+@media screen and (max-width: 1024px) {
+  body{
+    background-color: red;
+  }
+
+  .categorias__container{
+    background-color: rgb(0, 0, 0);
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .nav__categorias ul{
+    gap: 16px;
+  }
+  
+  .container__desplegable li{
+    padding: 0.5rem;
+    font-size: 15px;
+  }
+}
+
