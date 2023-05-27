@@ -11,6 +11,7 @@
 
   <!--Enlaces de la hoja de estilos y el ícono de la página-->
   <link rel="stylesheet" href="css/styles(Login).css">
+  <link rel="stylesheet" href="css/styles(index).css">
   <link rel="icon" href="images/DonGil.ico">
   <title>Bodegita Don Gil</title>
 </head>
@@ -47,67 +48,42 @@
                 </ul>
               </div>
             </li>
-            <li><a href=""><i class="uil uil-shopping-cart"></i> Mi Carrito</a></li>
+            <li class="carrito"><a href=""><i class="uil uil-shopping-cart"></i> Mi Carrito</a></li>
+            <li id="btnList"><i class="uil uil-bars"></i></li>
           </ul>
         </div>
       </div>
     </header>
 
     <!--BARRA DE CATEGORÍAS-->
-    <div class="container categorias__container">
+    <div class="categorias__container">
       <nav class="nav__categorias">
         <ul class="menu__categorias">
           <li>
+            <p id="btnCategorias">CATEGORÍAS &nbsp;<i class="uil uil-angle-down"></i></p>
+          </li>
+          <li id="categoria">
             <p>CARNES, AVES Y PESCADOS</p>
-            <div class="menu__desplegable">
-              <ul>
-                
-              </ul>
-            </div>
           </li>
-          <li>
+          <li id="categoria">
             <p>LÁCTEOS</p>
-            <div class="container__desplegable">
-              <ul>
-                <li><a href="">Yogurt tradicional</a></li>
-                <li><a href="">Mantequilla con sal</a></li>
-                <li><a href="">Queso fresco</a></li>
-                <li><a href="">Leche sin lactosa</a></li>
-                <li><a href="">Leche en polvo</a></li>
-                <li><a href="">Leche evaporada</a></li>
-                <li><a href="">Leche con almendras</a></li>
-                <li><a href="">Crema de leche</a></li>
-                <li><a href="">Leche con soya</a></li>
-                <li><a href="">Manjar</a></li>
-                <li><a href="">Leche condensada</a></li>
-                <li><a href="">Queso fundido</a></li>
-                <li><a href="">Queso parmesano</a></li>
-                <li><a href="">Queso Mozarella</a></li>
-                <li><a href="">Queso gouda</a></li>
-                <li><a href="">Yogurt con cereal</a></li>
-                <li><a href="">Yogurt con frutas</a></li>
-                <li><a href="">Mantequilla sin sal</a></li>
-                <li><a href="">Yogurt descremado</a></li>
-                <li><a href="">Yogurt sin lactosa</a></li>
-              </ul>
-            </div>
           </li>
-          <li>
+          <li id="categoria">
             <p>CONGELADOS</p>
           </li>
-          <li>
+          <li id="categoria">
             <p>FRUTAS Y VERDURAS</p>
           </li>
-          <li>
+          <li id="categoria">
             <p>PANADERÍA Y PASTELERÍA</p>
           </li>
-          <li>
+          <li id="categoria">
             <p>BEBIDAS</p>
           </li>
-          <li>
+          <li id="categoria">
             <p>CUIDADO PERSONAL</p>
           </li>
-          <li>
+          <li id="categoria">
             <p>LIMPIEZA</p>
           </li>
         </ul>
@@ -115,7 +91,7 @@
     </div>
 
     <!--FORMULARIO (INICIO DE SESIÓN)-->
-    <div class="container login__container">
+    <div id="loginContenedor" class="login__container">
       <h1>Inicio de Sesión</h1>
       <form action="">
         <div class="username">
@@ -139,7 +115,11 @@
     </div>
 
     <!--FORMULARIO (REGISTRO)-->
-    <div id="contenedor" class="container register__container">
+    <div id="contenedor" class="register__container">
+      <input type="checkbox" id="btnBack">
+      <div class="btnBack">
+        <i class="uil uil-angle-left"></i>
+      </div>
       <h1>Registrarse</h1>
       <form action="">
         <div class="names">

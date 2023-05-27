@@ -16,222 +16,30 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-.container {
-  margin: 0 auto;
-  width: 85%;
-}
-
-/*--SCROLLBAR--*/
-html::-webkit-scrollbar {
-  width: 12px;
-  background: rgb(182, 178, 197);
-}
-
-html::-webkit-scrollbar-thumb {
-  background: #772a7e;
-  border-radius: 6px;
-}
-
-/*--NAVBAR--*/
-header {
-  background: rgb(0, 0, 0);
-  height: 5.5rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 11;
-}
-
-.nav__container {
-  align-items: center;
-  display: grid;
-  height: 100%;
-  grid-template-areas: "nav__logo nav__right";
-  justify-content: space-between;
-  width: 90%;
-}
-
-.nav__logo {
-  align-items: center;
-  display: flex;
-  gap: 2rem;
-}
-
-.nav__logo img {
-  background: white;
-  border-radius: 100%;
-  width: 65px;
-}
-
-.nav__logo p {
-  color: rgb(255, 255, 255);
-  font-family: "Dancing Script", cursive;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.nav__menu {
-  align-items: center;
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
-
-.nav__menu i {
-  font-size: 24px;
-}
-
-.nav__menu .cuenta {
-  cursor: default;
-}
-
-.nav__menu a,
-.nav__menu li {
-  font-size: 16px;
-  color: white;
-  font-weight: bold;
-}
-
-.nav__menu li:hover,
-.nav__menu a:hover {
-  color: blueviolet;
-}
-
-.nav__menu .cuenta::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 61%;
-  width: 10%;
-  height: 1.6rem;
-  background-color: transparent;
-}
-
-/*--APARTADO DE CUENTA--*/
-.login__desplegable {
-  display: none;
-}
-
-.login__desplegable ul {
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
-  box-shadow: -15px 15px 10px -10px rgba(0, 0, 0, 0.5),
-    15px 15px 10px -10px rgba(0, 0, 0, 0.5);
-  display: grid;
-  gap: 1rem;
-  grid-template-rows: repeat(2, 1fr);
-  justify-content: center;
-  list-style: none;
-  margin-left: -1.5rem;
-  padding: 1rem;
-  position: absolute;
-  top: 4.8rem;
-  z-index: 1456;
-}
-
-.login__desplegable a {
-  color: black;
-  display: block;
-  font-weight: lighter;
-}
-
-.login__desplegable::before {
-  content: "";
-  display: block;
-  background: rgb(255, 255, 255);
-  width: 1.5rem;
-  height: 1.5rem;
-  top: 4.2rem;
-  position: absolute;
-  transform: rotate(45deg);
-}
-
-.nav__menu .cuenta:hover .login__desplegable {
-  display: block;
-}
-
-/*---NAVBAR CATEGORÍAS--*/
-.categorias__container {
-  align-items: center;
-  background: black;
-  clear: both;
-  display: grid;
-  height: 3.5rem;
-  justify-content: center;
-  position: fixed;
-  top: 5.5rem;
-  width: 100%;
-  z-index: 3;
-}
-
-.nav__categorias ul {
-  align-items: center;
-  display: flex;
-  gap: 30px;
-  list-style: none;
-}
-
-p::before {
-  content: "";
-  display: block;
-  left: 5%;
-  position: absolute;
-  top: 65%;
-  width: 0%;
-  height: 20px;
-  background-color: transparent;
-  transition: width 0.1s;
-}
-
-p:hover::before {
-  width: 90%;
-}
-
 p {
   color: white;
-  cursor: pointer;
 }
 
 p:hover {
+  cursor: pointer;
   color: blueviolet;
 }
 
-/*--SUB-CATEGORÍAS--*/
-
-.menu__desplegable {
+#btnList {
   display: none;
-  background: white;
-  border-radius: 10px;
-  padding: 20px;
-  position: absolute;
-  height: 300px;
-  z-index: 3;
-  left: 4.5%;
-  margin: 0;
-  top: 3.5rem;
-  width: 91%;
+  color: white;
 }
 
-.menu__desplegable::before {
-  background: rgb(255, 255, 255);
-  content: "";
-  display: block;
-  height: 1.5rem;
-  position: absolute;
-  top: -0.75rem;
-  transform: rotate(45deg);
-  width: 1.5rem;
-  z-index: 3;
-}
-
-.menu__categorias p:hover .menu__desplegable {
-  display: block;
+#btnCategorias{
+  display: none;
+  color: white;
 }
 
 /*--APARTADO DE INICIO DE SESIÓN--*/
+
 .login__container {
   background: transparent;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(8px);
   border-radius: 12px;
   box-shadow: -5px 5px 5px rgb(138, 43, 226, 0.2);
   height: 400px;
@@ -332,7 +140,7 @@ input[type="submit"]:hover {
   color: white;
 }
 
-#btn__regis{
+#btn__regis {
   display: none;
 }
 
@@ -345,12 +153,16 @@ input[type="submit"]:hover {
   font-weight: bold;
 }
 
-/*--REGISTRO--*/
-.register__container{
-  display: none ;
+/*--FORMULARIO DE REGISTRO--*/
+#btnBack {
+  display: none;
+}
+
+.register__container {
+  display: none;
   text-align: center;
   background: transparent;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(8px);
   border-radius: 12px;
   box-shadow: -5px 5px 5px rgb(138, 43, 226, 0.2);
   height: 470px;
@@ -363,7 +175,17 @@ input[type="submit"]:hover {
   transition: opacity 0.3s ease-in-out;
 }
 
-.register__container h1{
+.register__container i {
+  font-size: 40px;
+  position: fixed;
+  left: 2%;
+  color: white;
+  top: 5%;
+  cursor: pointer;
+  margin: 4px 4px 4px;
+}
+
+.register__container h1 {
   text-align: center;
   margin-top: 15px;
   padding: 0 0 20px 0;
@@ -371,27 +193,27 @@ input[type="submit"]:hover {
   border-bottom: 1px white solid;
 }
 
-.register__container form{
+.register__container form {
   padding: 0 10px;
 }
 
 .register__container .names,
 .register__container .mail,
-.register__container .reg__password{
+.register__container .reg__password {
   position: relative;
   border-bottom: 2px white solid;
   margin: 30px 0;
 }
 
-.register__container .last__names{
+.register__container .last__names {
   position: relative;
   border-bottom: 2px white solid;
   margin: 30px 0;
 }
 
-.names input, 
+.names input,
 .mail input,
-.reg__password input{
+.reg__password input {
   width: 100%;
   padding: 0 5px;
   height: 40px;
@@ -401,7 +223,7 @@ input[type="submit"]:hover {
   outline: none;
 }
 
-.last__names input{
+.last__names input {
   width: 90%;
   padding: 0 5px;
   height: 40px;
@@ -409,23 +231,22 @@ input[type="submit"]:hover {
   color: white;
   background: transparent;
   outline: none;
-} 
+}
 
-.last__names .ape__mat{
+.last__names .ape__mat {
   margin-left: 20px;
 }
 
-.last__names{
+.last__names {
   display: grid;
-  grid-template-areas: 
-  ".ape__pat .ape__mat" ".label__1 .label__2";
+  grid-template-areas: ".ape__pat .ape__mat" ".label__1 .label__2";
 }
 
-.last__names::before{
+.last__names::before {
   text-align: center;
   font-size: 30px;
   color: white;
-  content: '|';
+  content: "|";
   display: block;
   background: transparent;
   width: 40px;
@@ -434,7 +255,7 @@ input[type="submit"]:hover {
   position: absolute;
 }
 
-.last__names .label__1{
+.last__names .label__1 {
   position: absolute;
   top: 50%;
   left: 5px;
@@ -445,7 +266,7 @@ input[type="submit"]:hover {
   transition: 0.5s;
 }
 
-.last__names .label__2{
+.last__names .label__2 {
   position: absolute;
   top: 50%;
   left: 215px;
@@ -458,7 +279,7 @@ input[type="submit"]:hover {
 
 .names label,
 .mail label,
-.reg__password label{
+.reg__password label {
   position: absolute;
   top: 50%;
   left: 5px;
@@ -471,24 +292,26 @@ input[type="submit"]:hover {
 
 .names input:focus ~ label,
 .mail input:focus ~ label,
-.reg__password input:focus ~ label{
+.reg__password input:focus ~ label {
   top: -5px;
   color: white;
   font-weight: bold;
 }
 
-.last__names .ape__pat:focus ~ .label__1{
+.last__names .ape__pat:focus ~ .label__1 {
   top: -5px;
   color: white;
   font-weight: bold;
 }
 
-.last__names .ape__mat:focus ~ .label__2{
+.last__names .ape__mat:focus ~ .label__2 {
   top: -5px;
   color: white;
   font-weight: bold;
 }
 
-.register__container input[type="submit"]{
+.register__container input[type="submit"] {
   width: 85%;
 }
+
+

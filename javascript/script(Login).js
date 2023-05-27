@@ -1,5 +1,9 @@
+/* Código para habilitar y deshabilitar la ventana de registro */
 const checkbox = document.getElementById("btn__regis");
 const contenedor = document.getElementById("contenedor");
+
+/**const checkbox2 = document.getElementById("backBtn");
+const contendor2 = document.getElementById("loginContenedor"); */
 
 checkbox.addEventListener("change", function () {
   if (this.checked) {
@@ -10,7 +14,7 @@ checkbox.addEventListener("change", function () {
 });
 
 function mostrarContenedor() {
-    console.log('Mostrando contenedor');
+    console.log('Mostrando contenedor de registro');
   contenedor.style.display = "block";
   setTimeout(function () {
     contenedor.style.opacity = "1";
@@ -18,9 +22,13 @@ function mostrarContenedor() {
 }
 
 function ocultarContenedor() {
-    console.log('Mostrando contenedor');
+    console.log('Ocultando contenedor');
   contenedor.style.opacity = "0";
   setTimeout(function () {
     contenedor.style.display = "none";
   }, 300);
 }
+
+/* Código para el responsive */
+
+
