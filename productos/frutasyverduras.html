@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!--Enlaces para la fuente e íconos de la página-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+  <!--Enlaces de la hoja de estilos y el ícono de la página-->
+  <link rel="stylesheet" href="../css/styles(index).css">
+  <link rel="stylesheet" href="../css/styles(Producto).css">
+  <link rel="icon" href="../images/DonGil.ico">
+
+  <!--Enlace para el Swiper-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <title>Bodegita Don Gil</title>
+</head>
+
+<body>
+  <div class="pag__contenido">
+
+    <!--NAVBAR-->
+    <header>
+      <div class="container nav__container">
+        <div class="nav__left">
+          <a href="../index.html">
+            <div class="nav__logo">
+              <img src="../images/DonGilLogo.png">
+              <p class="text__logo">La Bodeguita de Don Gil</p>
+            </div>
+          </a>
+        </div>
+        <div class="nav__right">
+          <ul class="nav__menu">
+            <li class="cuenta">
+              <i class="uil uil-user-circle"></i> Mi Cuenta <i class="uil uil-angle-down"></i>
+              <div class="login__desplegable">
+                <ul>
+                  <li>
+                    <a href="../login.html"><i class="uil uil-signout"></i>&nbsp; Inicia Sesión / Regístrate</a>
+                  </li> 
+                  <li>
+                    <a href=""><i class="uil uil-user"></i>&nbsp; Perfil</a>
+                  </li>
+                  <li>
+                    <a href=""><i class="uil uil-box"></i>&nbsp; Mis Pedidos</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a href=""><i class="uil uil-shopping-cart"></i> Mi Carrito</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!--BARRA DE CATEGORÍAS-->
+    <div class="container categorias__container">
+      <nav class="nav__categorias">
+        <ul class="menu__categorias">
+          <li>
+            <a class="categoria" href="carnes.html">CARNES, AVES Y PESCADOS</a>
+            <div class="container__desplegable">
+              <ul>
+                <li><a href="">Bisteck</a></li>
+                <li><a href="">Churrasco</a></li>
+                <li><a href="">Cerdo</a></li>
+                <li><a href="">Pavo</a></li>
+                <li><a href="">Pechuga de Pollo</a></li>
+                <li><a href="">Res</a></li>
+                <li><a href="">Bisteck</a></li>
+                <li><a href="">Churrasco</a></li>
+                <li><a href="">Cerdo</a></li>
+                <li><a href="">Pavo</a></li>
+                <li><a href="">Pechuga de Pollo</a></li>
+                <li><a href="">Res</a></li>
+                <li><a href="">Bisteck</a></li>
+                <li><a href="">Churrasco</a></li>
+                <li><a href="">Cerdo</a></li>
+                <li><a href="">Pavo</a></li>
+                <li><a href="">Pechuga de Pollo</a></li>
+                <li><a href="">Res</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="categoria" href="lacteos.html">LÁCTEOS</a>
+            <div class="container__desplegable">
+              <ul>
+                <li><a href="">Yogurt tradicional</a></li>
+                <li><a href="">Mantequilla con sal</a></li>
+                <li><a href="">Queso fresco</a></li>
+                <li><a href="">Leche sin lactosa</a></li>
+                <li><a href="">Leche en polvo</a></li>
+                <li><a href="">Leche evaporada</a></li>
+                <li><a href="">Leche con almendras</a></li>
+                <li><a href="">Crema de leche</a></li>
+                <li><a href="">Leche con soya</a></li>
+                <li><a href="">Manjar</a></li>
+                <li><a href="">Leche condensada</a></li>
+                <li><a href="">Queso fundido</a></li>
+                <li><a href="">Queso parmesano</a></li>
+                <li><a href="">Queso Mozarella</a></li>
+                <li><a href="">Queso gouda</a></li>
+                <li><a href="">Yogurt con cereal</a></li>
+                <li><a href="">Yogurt con frutas</a></li>
+                <li><a href="">Mantequilla sin sal</a></li>
+                <li><a href="">Yogurt descremado</a></li>
+                <li><a href="">Yogurt sin lactosa</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="categoria" href="">CONGELADOS</a>
+            <div class="container__desplegable">
+              <ul>
+                <li><a href="">Bisteck</a></li>
+                <li><a href="">Churrasco</a></li>
+                <li><a href="">Cerdo</a></li>
+                <li><a href="">Pavo</a></li>
+                <li><a href="">Pechuga de Pollo</a></li>
+                <li><a href="">Res</a></li>
+                <li><a href="">Bisteck</a></li>
+                <li><a href="">Churrasco</a></li>
+                <li><a href="">Cerdo</a></li>
+                <li><a href="">Pavo</a></li>
+                <li><a href="">Pechuga de Pollo</a></li>
+                <li><a href="">Res</a></li>
+                <li><a href="">Bisteck</a></li>
+                <li><a href="">Churrasco</a></li>
+                <li><a href="">Cerdo</a></li>
+                <li><a href="">Pavo</a></li>
+                <li><a href="">Pechuga de Pollo</a></li>
+                <li><a href="">Res</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="categoria" href="">FRUTAS Y VERDURAS</a>
+            <div class="container__desplegable">
+              <ul>
+                <li><a href="">Manzanas</a></li>
+                <li><a href="">Plátanos</a></li>
+                <li><a href="">Naranjas</a></li>
+                <li><a href="">Uvas</a></li>
+                <li><a href="">Mandarina</a></li>
+                <li><a href="">Mangos</a></li>
+                <li><a href="">Papayas</a></li>
+                <li><a href="">Fresas</a></li>
+                <li><a href="">Peras</a></li>
+                <li><a href="">Maracuyá</a></li>
+                <li><a href="">Carambolas</a></li>
+                <li><a href="">Papas</a></li>
+                <li><a href="">Tomates</a></li>
+                <li><a href="">Zanahoria</a></li>
+                <li><a href="">Lechuga</a></li>
+                <li><a href="">Apio</a></li>
+                <li><a href="">Poro/a></li>
+                <li><a href="">Cebolla</a></li>
+                <li><a href="">Arvejas</a></li>
+                <li><a href="">Choclo</a></li>
+                <li><a href="">Espárragos</a></li>
+                <li><a href="">Pepino</a></li>
+                <li><a href="">Limón</a</li>
+                <li><a href="">Palta</a></li>
+                <li><a href="">Lúcuma/a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="categoria" href="">PANADERÍA Y PASTELERÍA</a>
+            <div class="container__desplegable">
+              <ul>
+                <li><a href="">Panes Francés</a></li>
+                <li><a href="">Flan</a></li>
+                <li><a href="">Alfajor</a></li>
+                <li><a href="">Pan de yema</a></li>
+                <li><a href="">Caramandunga</a></li>
+                <li><a href="">Tortas</a></li>
+                <li><a href="">Queques</a></li>
+                <li><a href="">Mil hojas</a></li>
+                <li><a href="">Gelatina</a></li>
+                <li><a href="">Pan de caracol</a></li>
+                <li><a href="">Crema volteada</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="categoria" href="">BEBIDAS</a>
+            <div class="container__desplegable">
+              <ul>
+                <li><a href="">Bisteck</a></li>
+                <li><a href="">Churrasco</a></li>
+                <li><a href="">Cerdo</a></li>
+                <li><a href="">Pavo</a></li>
+                <li><a href="">Pechuga de Pollo</a></li>
+                <li><a href="">Res</a></li>
+                <li><a href="">Bisteck</a></li>
+                <li><a href="">Churrasco</a></li>
+                <li><a href="">Cerdo</a></li>
+                <li><a href="">Pavo</a></li>
+                <li><a href="">Pechuga de Pollo</a></li>
+                <li><a href="">Res</a></li>
+                <li><a href="">Bisteck</a></li>
+                <li><a href="">Churrasco</a></li>
+                <li><a href="">Cerdo</a></li>
+                <li><a href="">Pavo</a></li>
+                <li><a href="">Pechuga de Pollo</a></li>
+                <li><a href="">Res</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="categoria" href="">CUIDADO PERSONAL</a>
+            <div class="container__desplegable">
+              <ul>
+                <li><a href="">Bisteck</a></li>
+                <li><a href="">Churrasco</a></li>
+                <li><a href="">Cerdo</a></li>
+                <li><a href="">Pavo</a></li>
+                <li><a href="">Pechuga de Pollo</a></li>
+                <li><a href="">Res</a></li>
+                <li><a href="">Bisteck</a></li>
+                <li><a href="">Churrasco</a></li>
+                <li><a href="">Cerdo</a></li>
+                <li><a href="">Pavo</a></li>
+                <li><a href="">Pechuga de Pollo</a></li>
+                <li><a href="">Res</a></li>
+                <li><a href="">Bisteck</a></li>
+                <li><a href="">Churrasco</a></li>
+                <li><a href="">Cerdo</a></li>
+                <li><a href="">Pavo</a></li>
+                <li><a href="">Pechuga de Pollo</a></li>
+                <li><a href="">Res</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="categoria" href="">LIMPIEZA</a>
+            <div class="container__desplegable">
+              <ul>
+                <li><a href="">Bisteck</a></li>
+                <li><a href="">Churrasco</a></li>
+                <li><a href="">Cerdo</a></li>
+                <li><a href="">Pavo</a></li>
+                <li><a href="">Pechuga de Pollo</a></li>
+                <li><a href="">Res</a></li>
+                <li><a href="">Bisteck</a></li>
+                <li><a href="">Churrasco</a></li>
+                <li><a href="">Cerdo</a></li>
+                <li><a href="">Pavo</a></li>
+                <li><a href="">Pechuga de Pollo</a></li>
+                <li><a href="">Res</a></li>
+                <li><a href="">Bisteck</a></li>
+                <li><a href="">Churrasco</a></li>
+                <li><a href="">Cerdo</a></li>
+                <li><a href="">Pavo</a></li>
+                <li><a href="">Pechuga de Pollo</a></li>
+                <li><a href="">Res</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <!--PRODUCTOS!!!!!-->
+    <div style="margin-top: 200px; margin-left: 100px;">
+      <div class="producto_carril">
+        <section class="producto">
+          <img src="../images/productos/FRUTAS Y VERDURAS/manzana_golden.jpg" alt="">
+          <br>
+          <h3>Manzana Golden x Kg.</h3>
+          <div class="precio">
+            <h5>Precio</h5>
+          </div>
+          <div class="precio">
+            <h3>S/ 5.00 </h3>
+          </div>
+          <a href="#" class="boton">AGREGAR</a>
+        </section>
+        
+        <section class="producto">
+          <img src="../images/productos/FRUTAS Y VERDURAS/platano_seda.jpg" alt="">
+          <br>
+          <h3>Platano seda  5Und.</h3>
+          <div class="precio">
+            <h5>Precio</h5>
+          </div>
+          <div class="precio">
+            <h3>S/ 3.00</h3>
+          </div>
+          <a href="#" class="boton">AGREGAR</a>
+        </section>
+        
+        <section class="producto">
+          <img src="../images/productos/FRUTAS Y VERDURAS/naranja.jpg" alt="">
+          <br>
+          <h3>Naranja x Kg.</h3>
+          <div class="precio">
+            <h5>Precio</h5>
+          </div>
+          <div class="precio">
+            <h3>S/ 3.00</h3>
+          </div>
+          <a href="#" class="boton">AGREGAR</a>
+        </section>
+        
+        <section class="producto">
+          <img src="../images/productos/FRUTAS Y VERDURAS/uva_borgoña.jpg" alt="">
+          <br>
+          <h3>Uva borgoña x Kg.</h3>
+          <div class="precio">
+            <h5>Precio</h5>
+          </div>
+          <div class="precio">
+            <h3>S/ 6.50</h3>
+          </div>
+          <a href="#" class="boton">AGREGAR</a>
+        </section>
+        
+        <section class="producto">
+          <img src="../images/productos/FRUTAS Y VERDURAS/mandarina_sin_pepa.jpg" alt="">
+          <br>
+          <h3>Mandarina sin pepa x Kg.</h3>
+          <div class="precio">
+            <h5>Precio</h5>
+          </div>
+          <div class="precio">
+            <h3>S/ 4.00</h3>
+          </div>
+          <a href="#" class="boton">AGREGAR</a>
+        </section>
+        
+        <section class="producto">
+          <img src="../images/productos/FRUTAS Y VERDURAS/mango_papaya.jpg" alt="">
+          <br>
+          <h3>Mango papaya x Kg.</h3>
+          <div class="precio">
+            <h5>Precio</h5>
+          </div>
+          <div class="precio">
+            <h3>S/ 4.00</h3>
+          </div>
+          <a href="#" class="boton">AGREGAR</a>
+        </section>
+        
+        <section class="producto">
+          <img src="../images/productos/FRUTAS Y VERDURAS/papaya.jpg" alt="">
+          <br>
+          <h3>Papaya x Kg.</h3>
+          <div class="precio">
+            <h5>Precio</h5>
+          </div>
+          <div class="precio">
+            <h3>S/ 4.50</h3>
+          </div>
+          <a href="#" class="boton">AGREGAR</a>
+        </section>
+        
+        <section class="producto">
+          <img src="../images/productos/FRUTAS Y VERDURAS/fresas.jpg" alt="">
+          <br>
+          <h3>Fresas x Kg.</h3>
+          <div class="precio">
+            <h5>Precio</h5>
+          </div>
+          <div class="precio">
+            <h3>S/ 10.00</h3>
+          </div>
+          <a href="#" class="boton">AGREGAR</a>
+        </section>
+        
+        <section class="producto">
+          <img src="../images/productos/FRUTAS Y VERDURAS/maracuya.jpg" alt="">
+          <br>
+          <h3>Maracuyá x Kg.</h3>
+          <div class="precio">
+            <h5>Precio</h5>
+          </div>
+          <div class="precio">
+            <h3>S/ 4.50</h3>
+          </div>
+          <a href="#" class="boton">AGREGAR</a>
+        </section>
+        
+        <section class="producto">
+          <img src="../images/productos/FRUTAS Y VERDURAS/carambola.jpg" alt="">
+          <br>
+          <h3>Carambolas x Kg.</h3>
+          <div class="precio">
+            <h5>Precio</h5>
+          </div>
+          <div class="precio">
+            <h3>S/ 3.50</h3>
+          </div>
+          <a href="#" class="boton">AGREGAR</a>
+        </section>
+        
+        <section class="producto">
+          <img src="../images/productos/FRUTAS Y VERDURAS/papa_amarilla.jpg" alt="">
+          <br>
+          <h3>Papa amarilla x Kg.</h3>
+          <div class="precio">
+            <h5>Precio</h5>
+          </div>
+          <div class="precio">
+            <h3>S/ 4.50</h3>
+          </div>
+          <a href="#" class="boton">AGREGAR</a>
+        </section>
+        
+        <section class="producto">
+          <img src="../images/productos/FRUTAS Y VERDURAS/tomate.jpg" alt="">
+          <br>
+          <h3>Tomate x Kg.</h3>
+          <div class="precio">
+            <h5>Precio</h5>
+          </div>
+          <div class="precio">
+            <h3>S/ 5.50</h3>
+          </div>
+          <a href="#" class="boton">AGREGAR</a>
+        </section>
+        
+        <section class="producto">
+          <img src="../images/productos/FRUTAS Y VERDURAS/zanahoria.jpg" alt="">
+          <br>
+          <h3>Zanahoria x Kg.</h3>
+          <div class="precio">
+            <h5>Precio</h5>
+          </div>
+          <div class="precio">
+            <h3>S/ 2.50</h3>
+          </div>
+          <a href="#" class="boton">AGREGAR</a>
+        </section>
+        
+        <section class="producto">
+          <img src="../images/productos/FRUTAS Y VERDURAS/lechuga.jpg" alt="">
+          <br>
+          <h3>Lechuga 1 Und.</h3>
+          <div class="precio">
+            <h5>Precio</h5>
+          </div>
+          <div class="precio">
+            <h3>S/ 2.50</h3>
+          </div>
+          <a href="#" class="boton">AGREGAR</a>
+        </section>
+        
+        <section class="producto">
+          <img src="../images/productos/FRUTAS Y VERDURAS/apio.jpg" alt="">
+          <br>
+          <h3>Apio 1 Und.</h3>
+          <div class="precio">
+            <h5>Precio</h5>
+          </div>
+          <div class="precio">
+            <h3>S/ 5.00</h3>
+          </div>
+          <a href="#" class="boton">AGREGAR</a>
+        </section>
+        
+        <section class="producto">
+          <img src="../images/productos/FRUTAS Y VERDURAS/poro.jpg" alt="">
+          <br>
+          <h3>Poro 1 Und.</h3>
+          <div class="precio">
+            <h5>Precio</h5>
+          </div>
+          <div class="precio">
+            <h3>S/ 2.00</h3>
+          </div>
+          <a href="#" class="boton">AGREGAR</a>
+        </section>
+        
+        <section class="producto">
+          <img src="../images/productos/FRUTAS Y VERDURAS/cebolla.jpg" alt="">
+          <br>
+          <h3>Cebolla x Kg.</h3>
+          <div class="precio">
+            <h5>Precio</h5>
+          </div>
+          <div class="precio">
+            <h3>S/ 3.00</h3>
+          </div>
+          <a href="#" class="boton">AGREGAR</a>
+        </section>
+
+        <section class="producto">
+            <img src="../images/productos/FRUTAS Y VERDURAS/arveja_costeño500g.jpg" alt="">
+            <br>
+            <h3>Arveja Costeño 500g.</h3>
+            <div class="precio">
+              <h5>Precio</h5>
+            </div>
+            <div class="precio">
+              <h3>S/ 3.50</h3>
+            </div>
+            <a href="#" class="boton">AGREGAR</a>
+          </section>
+
+          <section class="producto">
+            <img src="../images/productos/FRUTAS Y VERDURAS/choclo.jpg" alt="">
+            <br>
+            <h3>Choclo x 1 Und.</h3>
+            <div class="precio">
+              <h5>Precio</h5>
+            </div>
+            <div class="precio">
+              <h3>S/ 1.50</h3>
+            </div>
+            <a href="#" class="boton">AGREGAR</a>
+          </section>
+
+          <section class="producto">
+            <img src="../images/productos/FRUTAS Y VERDURAS/esparragos.jpg" alt="">
+            <br>
+            <h3>Esparragos X 350g.</h3>
+            <div class="precio">
+              <h5>Precio</h5>
+            </div>
+            <div class="precio">
+              <h3>S/ 3.00</h3>
+            </div>
+            <a href="#" class="boton">AGREGAR</a>
+          </section>
+
+          <section class="producto">
+            <img src="../images/productos/FRUTAS Y VERDURAS/pepino.jpg" alt="">
+            <br>
+            <h3>Pepino x 1 Und.</h3>
+            <div class="precio">
+              <h5>Precio</h5>
+            </div>
+            <div class="precio">
+              <h3>S/ 1.00</h3>
+            </div>
+            <a href="#" class="boton">AGREGAR</a>
+          </section>
+          
+          <section class="producto">
+            <img src="../images/productos/FRUTAS Y VERDURAS/limon.jpg" alt="">
+            <br>
+            <h3>Limón x Kg.</h3>
+            <div class="precio">
+              <h5>Precio</h5>
+            </div>
+            <div class="precio">
+              <h3>S/ 4.50</h3>
+            </div>
+            <a href="#" class="boton">AGREGAR</a>
+          </section>
+
+          <section class="producto">
+            <img src="../images/productos/FRUTAS Y VERDURAS/palta_fuerte.jpg" alt="">
+            <br>
+            <h3>Palta Fuerte x Kg.</h3>
+            <div class="precio">
+              <h5>Precio</h5>
+            </div>
+            <div class="precio">
+              <h3>S/ 8.00</h3>
+            </div>
+            <a href="#" class="boton">AGREGAR</a>
+          </section>
+
+          <section class="producto">
+            <img src="../images/productos/FRUTAS Y VERDURAS/lucuma.jpg" alt="">
+            <br>
+            <h3>Lúcuma x Kg.</h3>
+            <div class="precio">
+              <h5>Precio</h5>
+            </div>
+            <div class="precio">
+              <h3>S/ 8.00</h3>
+            </div>
+            <a href="#" class="boton">AGREGAR</a>
+          </section>
+        
+      </div>   
+    </div>
+    
+  <!--PIE DE LA PÁGINA (INFORMACIÓN DE REFERENCIA)-->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__1">
+        <h4>SOBRE NOSOTROS</h4>
+      </div>
+      <div class="footer__2">
+        <h4>REFERENCIAS</h4>
+      </div>
+      <div class="footer__3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, rem.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!--Scripts-->
+  <script src="../javascript/script.js"></script>
+
+  <!--JS para el Swiper-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 0,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+</body>
+
+</html>
