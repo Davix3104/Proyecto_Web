@@ -12,6 +12,7 @@ body {
   color: white;
 }
 
+/* TODO: APARTADO PARA EL HEADER */
 header {
   align-items: center;
   display: grid;
@@ -23,6 +24,7 @@ header {
   justify-content: space-between;
 }
 
+/** CSS PARA EL LOGO Y EL TEXTO DE LA PÁGINA */
 .logo img {
   width: 60px;
   background: white;
@@ -35,6 +37,7 @@ header {
   font-size: 30px;
 }
 
+/** APARTADO PARA LA SECCIÓN DEL USUARIO*/
 .menu-user {
   list-style: none;
   display: flex;
@@ -55,10 +58,16 @@ header {
   font-weight: bold;
 }
 
+/** BOTÓN QUE SERVIRÁ PARA EL RESPONSIVE */
 .btnUser {
   display: none;
 }
 
+.btnCat {
+  display: none;
+}
+
+/** ESTILOS EXTRA */
 .header-container {
   background: black;
 }
@@ -85,6 +94,8 @@ header {
   font-size: 16px;
 }
 
+/** BARRA DE CARGA EN LA PARTE DE "MI CUENTA" Y "CARRITO" */
+
 .login::before,
 .carrito::before {
   content: "";
@@ -106,7 +117,7 @@ header {
   width: 100px;
 }
 
-/** SUB-MENÚ DEL LOGIN */
+/** MENÚ DESPLEGABLE PARA EL APARTADO DE "MI CUENTA" */
 .user-account {
   display: none;
   background-color: rgb(233, 224, 224);
@@ -149,25 +160,28 @@ header {
   transform: rotate(45deg);
 }
 
-.sub-categories{
+/** MENÚ DESPLEGABLE PARA LAS CATEGORÍAS ( MENÚS INDEPENDIENTES C/U ) */
+.sub-categories {
   display: none;
 }
 
-.sub-menu-categories-1{
+/*? MENÚ DESPLEGABLE PARA LA CATEGORÍA "CARNES-AVES-PESCADOS" */
+.sub-menu-categories-1 {
   position: fixed;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
   box-shadow: -15px 15px 10px -10px rgba(0, 0, 0, 0.5),
-  15px 15px 10px -10px rgba(0, 0, 0, 0.5);
+    15px 15px 10px -10px rgba(0, 0, 0, 0.5);
   display: grid;
   background-color: rgb(233, 224, 224);
   grid-template-columns: repeat(4, 1fr);
   top: 7.5rem;
   width: 90%;
   left: 5%;
+  cursor: default;
 }
 
-.sub-menu-categories-1 ul{
+.sub-menu-categories-1 ul {
   cursor: default;
   color: black;
   list-style: none;
@@ -177,11 +191,12 @@ header {
   font-weight: lighter;
 }
 
-.sub-menu-categories-1 li{
+.sub-menu-categories-1 li {
   margin: 0 0 0.25rem;
 }
 
-.sub-menu-categories-1::before{
+/* TODO: INDICADOR DEL MENÚ "OPCIONAL" (FALLO AL VERSE EN PANTALLAS MÁS AMPLIAS)
+.sub-menu-categories-1::before {
   content: "";
   display: block;
   width: 20px;
@@ -192,12 +207,13 @@ header {
   margin-left: 2.2rem;
   transform: rotate(45deg);
 }
+*/
 
-.sub-sub-categories{
+.sub-sub-categories {
   text-decoration: none;
 }
 
-.sub-sub-categories:hover{
+.sub-sub-categories:hover {
   text-decoration: underline;
 }
 
@@ -205,37 +221,114 @@ header {
   display: block;
 }
 
-.sub-menu-promo-1-1{
+/*! SUB-MENÚ PARA LAS PROMOCIONES EN LA SECCIÓN "POLLOS" */
+.sub-menu-promo-1-1 {
   display: none;
   position: absolute;
   z-index: 1;
-  top: 1rem;
-  left: 22%
+  top: 4%;
+  left: 21%;
 }
 
-.sub-menu-promo-1-1 img{
-  width: 160px;
-}
-
-.promo-1-1:hover .sub-menu-promo-1-1{
+.promo-1-1:hover .sub-menu-promo-1-1 {
   display: block;
 }
 
-.sub-menu-categories-2{
+/*! SUB-MENÚ PARA LAS PROMOCIONES EN LA SECCIÓN "RES" */
+.sub-menu-promo-1-2 {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 4%;
+  left: 46%;
+}
+
+.promo-1-2:hover .sub-menu-promo-1-2 {
+  display: block;
+}
+
+/*! SUB-MENÚ PARA LAS PROMOCIONES EN LA SECCIÓN "CERDO" */
+.sub-menu-promo-1-3 {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 4%;
+  left: 71%;
+}
+
+.promo-1-3:hover .sub-menu-promo-1-3 {
+  display: block;
+}
+
+/*! SUB-MENÚ PARA LAS PROMOCIONES EN LA SECCIÓN "PESCADOS" */
+.sub-menu-promo-1-4 {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 4%;
+  left: 64%;
+}
+
+.promo-1-4:hover .sub-menu-promo-1-4 {
+  display: block;
+}
+
+/*! SUB-MENÚ PARA LAS PROMOCIONES EN LA SECCIÓN "PAVO" */
+.sub-menu-promo-1-5 {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 21%;
+}
+
+.promo-1-5:hover .sub-menu-promo-1-5 {
+  display: block;
+}
+
+/*! SUB-MENÚ PARA LAS PROMOCIONES EN LA SECCIÓN "ENROLLADO" */
+.sub-menu-promo-1-6 {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 46%;
+}
+
+.promo-1-6:hover .sub-menu-promo-1-6 {
+  display: block;
+}
+
+/*! SUB-MENÚ PARA LAS PROMOCIONES EN LA SECCIÓN "HAMBURGUESAS" */
+.sub-menu-promo-1-7 {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 71%;
+}
+
+.promo-1-7:hover .sub-menu-promo-1-7 {
+  display: block;
+}
+
+/*? MENÚ DESPLEGABLE PARA LA CATEGORÍA "CONGELADOS" */
+.sub-menu-categories-2 {
   position: fixed;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
   box-shadow: -15px 15px 10px -10px rgba(0, 0, 0, 0.5),
-  15px 15px 10px -10px rgba(0, 0, 0, 0.5);
+    15px 15px 10px -10px rgba(0, 0, 0, 0.5);
   display: grid;
   background-color: rgb(233, 224, 224);
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 50% 50%;
   top: 7.5rem;
   width: 90%;
   left: 5%;
+  cursor: default;
 }
 
-.sub-menu-categories-2 ul{
+.sub-menu-categories-2 ul {
   cursor: default;
   color: black;
   list-style: none;
@@ -245,10 +338,11 @@ header {
   font-weight: lighter;
 }
 
-.sub-menu-categories-2 li{
+.sub-menu-categories-2 li {
   margin: 0 0 0.25rem;
 }
 
+/* TODO: INDICADOR DEL MENÚ "OPCIONAL" (FALLO AL VERSE EN PANTALLAS MÁS AMPLIAS)
 .sub-menu-categories-2::before{
   content: "";
   display: block;
@@ -257,30 +351,105 @@ header {
   position: absolute;
   background: rgb(233, 224, 224);
   top: -0.5rem;
-  margin-left: 2.2rem;
+  margin-left: 16.2rem;
   transform: rotate(45deg);
 }
+*/
 
-.sub-sub-categories{
-  text-decoration: none;
-}
-
-.sub-sub-categories:hover{
-  text-decoration: underline;
-}
-
-.sub-menu-promo-1-2{
+/*! SUB-MENÚ PARA LAS PROMOCIONES DE LA SECCIÓN "HELADOS" */
+.sub-menu-promo-2-1 {
   display: none;
   position: absolute;
   z-index: 1;
-  top: 1rem;
-  left: 22%
+  top: 4%;
+  left: 21%;
 }
 
-.sub-menu-promo-1-2 img{
-  width: 160px;
+.sub-menu-promo-2-1 img {
+  height: 200px;
+  width: 350px;
 }
 
-.promo-1-2:hover .sub-menu-promo-1-2{
+.promo-2-1:hover .sub-menu-promo-2-1 {
+  display: block;
+}
+
+/*! SUB-MENÚ PARA LAS PROMOCIONES DE LA SECCIÓN "PREPARADOS" */
+.sub-menu-promo-2-2 {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 4%;
+  left: 67%;
+}
+
+.sub-menu-promo-2-2 img {
+  height: 200px;
+  width: 350px;
+}
+
+.promo-2-2:hover .sub-menu-promo-2-2 {
+  display: block;
+}
+
+/*? MENÚ DESPLEGABLE PARA LA CATEGORÍA "LÁCTEOS" */
+.sub-menu-categories-3 {
+  position: fixed;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  box-shadow: -15px 15px 10px -10px rgba(0, 0, 0, 0.5),
+    15px 15px 10px -10px rgba(0, 0, 0, 0.5);
+  display: grid;
+  background-color: rgb(233, 224, 224);
+  grid-template-columns: 30% 30% 40%;
+  top: 7.5rem;
+  width: 90%;
+  left: 5%;
+  cursor: default;
+}
+
+.sub-menu-categories-3 ul {
+  cursor: default;
+  color: black;
+  list-style: none;
+  padding: 1rem;
+  width: 250px;
+  margin: 0 1rem;
+  font-weight: lighter;
+}
+
+.sub-menu-categories-3 li {
+  margin: 0 0 0.25rem;
+}
+
+/* TODO: INDICADOR DEL MENÚ "OPCIONAL" (FALLO AL VERSE EN PANTALLAS DIFERENTES A 1366PX DE ANCHO)
+.sub-menu-categories-3::before{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: rgb(233, 224, 224);
+  top: -0.5rem;
+  margin-left: 33.25%;
+  transform: rotate(45deg);
+}
+*/
+
+/*! SUB-MENÚ PARA LAS PROMOCIONES DE LA SECCIÓN "LECHE" */
+.sub-menu-promo-3-1 {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 5.5%;
+  left: 18%;
+}
+
+.sub-menu-promo-3-1 img {
+  height: 200px;
+  width: 150px;
+}
+
+.promo-3-1:hover .sub-menu-promo-3-1 {
   display: block;
 }

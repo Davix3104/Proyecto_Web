@@ -2,17 +2,22 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
-  <!--Enlaces de la hoja de estilos y el ícono de la página-->
-  <link rel="stylesheet" href="css/styles(pruebas).css">
-  <link rel="icon" href="images/DonGil.ico">
-  <title>Tiendita Don Gil</title>
+    <!--Enlaces de la hoja de estilos y el ícono de la página-->
+    <link rel="stylesheet" href="css/styles(pruebas).css">
+    <link rel="icon" href="images/DonGil.ico">
+
+    <!--Javascript para Swiper-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>-->
+
+    <title>Tiendita Don Gil</title>
 </head>
 
 <body>
@@ -32,7 +37,8 @@
                     <li class="login item with-delay">
                         <i class="uil uil-user"></i> Mi Cuenta <i class="uil uil-angle-down"></i>
                         <ul class="user-account sub-menu">
-                            <li><a href="login.html"><i class="uil uil-signout"></i>&nbsp; Inicia Sesión / Regístrate</a></li>
+                            <li><a href="login.html"><i class="uil uil-signout"></i>&nbsp; Inicia Sesión /
+                                    Regístrate</a></li>
                             <li><a href=""><i class="uil uil-user"></i>&nbsp; Mi Perfil</a></li>
                             <li><a href=""><i class="uil uil-box"></i>&nbsp; Mis Pedidos</a></li>
                         </ul>
@@ -44,8 +50,9 @@
         </header>
 
         <div class="header-down">
+            <p class="btnCat">CATEGORÍAS <i class="uil uil-angle-down"></i></p>
             <ul class="categories">
-                <li class="carnes item with-delay">
+                <li class="carnes cat with-delay">
                     CARNES, PESCADOS Y AVES
                     <div class="sub-categories">
                         <div class="sub-menu-categories-1">
@@ -56,97 +63,156 @@
                                 <li class="sub-sub-categories">Menudencias</li>
                                 <li class="sub-sub-categories">Elaborados</li>
                                 <div class="sub-menu-promo-1-1">
-                                    <img src="https://www.plazavea.com.pe/arquivos/F-BANNER-MENU-CARNES-AVES-PESCADOS-PP-20206481-04-JUN-ACT.png">
+                                    <img src="images/REFERENCE PROMO.png">
                                 </div>
                             </ul>
-                            <ul class="promo-2-1">
+                            <ul class="promo-1-2">
                                 <li><a href="">Res</a></li>
                                 <li class="sub-sub-categories">Carne Molida</li>
                                 <li class="sub-sub-categories">Cortes Parrilleros</li>
                                 <li class="sub-sub-categories">Cortes Caseros</li>
                                 <li class="sub-sub-categories">Menudencias</li>
                                 <li class="sub-sub-categories">Elaborados</li>
+                                <div class="sub-menu-promo-1-2">
+                                    <img src="images/REFERENCE PROMO.png">
+                                </div>
                             </ul>
-                            <ul class="promo-3-1">
+                            <ul class="promo-1-3">
                                 <li><a href="">Cerdo</a></li>
                                 <li class="sub-sub-categories">Cortes Parrilleros</li>
                                 <li class="sub-sub-categories">Cortes Elaborados</li>
                                 <li class="sub-sub-categories">Elaborados</li>
+                                <div class="sub-menu-promo-1-3">
+                                    <img src="images/REFERENCE PROMO.png">
+                                </div>
                             </ul>
-                            <ul class="promo-4-1">
+                            <ul class="promo-1-4">
                                 <li><a href="">Pescados y Mariscos</a></li>
                                 <li class="sub-sub-categories">Pescados Frescos</li>
                                 <li class="sub-sub-categories">Pescados Congelados</li>
                                 <li class="sub-sub-categories">Mariscos Frescos</li>
                                 <li class="sub-sub-categories">Mariscos Congelados</li>
+                                <div class="sub-menu-promo-1-4">
+                                    <img src="images/REFERENCE PROMO.png">
+                                </div>
                             </ul>
-                            <ul class="promo-5-1">
+                            <ul class="promo-1-5">
                                 <li><a href="">Pavo, Pavita y Gallina</a></li>
                                 <li class="sub-sub-categories">Cortes de Pavita</li>
                                 <li class="sub-sub-categories">Elaborados de Pavo y Pavita</li>
                                 <li class="sub-sub-categories">Pavo Entero</li>
                                 <li class="sub-sub-categories">Gallina</li>
+                                <div class="sub-menu-promo-1-5">
+                                    <img src="images/REFERENCE PROMO.png">
+                                </div>
                             </ul>
-                            <ul class="promo-6-1">
+                            <ul class="promo-1-6">
                                 <li><a href="">Enrollado</a></li>
                                 <li class="sub-sub-categories">Enrollado de Pollo</li>
                                 <li class="sub-sub-categories">Enrollado de Cerdo</li>
                                 <li class="sub-sub-categories">Enrollado de Pavita</li>
+                                <div class="sub-menu-promo-1-6">
+                                    <img src="images/REFERENCE PROMO.png">
+                                </div>
                             </ul>
-                            <ul class="promo-7-1">
+                            <ul class="promo-1-7">
                                 <li><a href="">Hamburguesas, Nuggets y Apanados</a></li>
                                 <li class="sub-sub-categories">Hamburguesas, Nuggets y Apanados de Pollo</li>
                                 <li class="sub-sub-categories">Hamburguesas, Nuggets y Apanados de Res</li>
                                 <li class="sub-sub-categories">Hamburguesas, Nuggets y Apanados de Pescado</li>
+                                <div class="sub-menu-promo-1-7">
+                                    <img src="images/REFERENCE PROMO.png">
+                                </div>
                             </ul>
                         </div>
                     </div>
                 </li>
-                <li class="congelados item with-delay">
+                <li class="congelados cat with-delay">
                     CONGELADOS
                     <div class="sub-categories">
                         <div class="sub-menu-categories-2">
-                            <ul class="promo-1-2">
+                            <ul class="promo-2-1">
                                 <li><a href="">Helados y Postres</a></li>
-                                <li class="sub-sub-categories">Helado de BESO DE MOZA</li>
-                                <li class="sub-sub-categories">Helado PEZIDURI</li>
-                                <li class="sub-sub-categories">Menudencias</li>
-                                <li class="sub-sub-categories">Elaborados</li>
-                                <div class="sub-menu-promo-1-2">
-                                    <img src="https://img.offers-cdn.net/assets/uploads/offers/pe/8353908/helados-peziduri-unid-x-2-2-l-large.jpeg">
+                                <li class="sub-sub-categories">Producto 1</li>
+                                <li class="sub-sub-categories">Producto 2</li>
+                                <li class="sub-sub-categories">Producto 3</li>
+                                <li class="sub-sub-categories">Producto 4</li>
+                                <li class="sub-sub-categories">Producto 5</li>
+                                <li class="sub-sub-categories">Producto 6</li>
+                                <li class="sub-sub-categories">Producto 7</li>
+                                <li class="sub-sub-categories">Producto 8</li>
+                                <div class="sub-menu-promo-2-1">
+                                    <img src="images/REFERENCE PROMO.png">
                                 </div>
                             </ul>
                             <ul class="promo-2-2">
                                 <li><a href="">Preparados</a></li>
-                                <li class="sub-sub-categories">Pizza</li>
-                                <li class="sub-sub-categories">Lasaña</li>
-                                <li class="sub-sub-categories">Empanadas</li>
+                                <li class="sub-sub-categories">Producto 1</li>
+                                <li class="sub-sub-categories">Producto 2</li>
+                                <li class="sub-sub-categories">Producto 3</li>
+                                <li class="sub-sub-categories">Producto 4</li>
+                                <div class="sub-menu-promo-2-2">
+                                    <img src="images/REFERENCE PROMO.png">
+                                </div>
                             </ul>
                         </div>
                     </div>
                 </li>
-                <li class="lacteos item with-delay">
+                <li class="lacteos cat with-delay">
                     LÁCTEOS
+                    <div class="sub-categories">
+                        <div class="sub-menu-categories-3">
+                            <ul class="promo-3-1">
+                                <li><a href="">Leche</a></li>
+                                <li class="sub-sub-categories">Producto 1</li>
+                                <li class="sub-sub-categories">Producto 2</li>
+                                <li class="sub-sub-categories">Producto 3</li>
+                                <li class="sub-sub-categories">Producto 4</li>
+                                <li class="sub-sub-categories">Producto 5</li>
+                                <li class="sub-sub-categories">Producto 6</li>
+                                <li class="sub-sub-categories">Producto 7</li>
+                                <li class="sub-sub-categories">Producto 8</li>
+                                <div class="sub-menu-promo-3-1">
+                                    <img src="images/REFERENCE PROMO.png" alt="">
+                                </div>
+                            </ul>
+                            <ul class="promo-3-2">
+                                <li><a href="">Yogurt</a></li>
+                                <li class="sub-sub-categories">Producto 1</li>
+                                <li class="sub-sub-categories">Producto 2</li>
+                                <li class="sub-sub-categories">Producto 3</li>
+                                <li class="sub-sub-categories">Producto 4</li>
+                                <li class="sub-sub-categories">Producto 5</li>
+                            </ul>
+                            <ul class="promo-3-3">
+                                <li><a href="">Mantequilla y Margarina</a></li>
+                                <li class="sub-sub-categories">Mantequilla</li>
+                                <li class="sub-sub-categories">Margarina</li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
-                <li class="frutas item with-delay">
+                <li class="frutas cat with-delay">
                     FRUTAS Y VERDURAS
                 </li>
-                <li class="panaderia item with-delay">
+                <li class="panaderia cat with-delay">
                     PANADERÍA Y PASTELERÍA
                 </li>
-                <li class="bebidas item with-delay">
+                <li class="bebidas cat with-delay">
                     BEBIDAS
                 </li>
-                <li class="cuidado item item with-delay">
+                <li class="cuidado cat with-delay">
                     CUIDADO PERSONAL
                 </li>
-                <li class="limpieza item with-delay">
+                <li class="limpieza cat with-delay">
                     LIMPIEZA
                 </li>
             </ul>
         </div>
     </div>
 
+
+    <!-- Script de la página -->
     <script src="javascript/script(prueba).js"></script>
 </body>
 

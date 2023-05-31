@@ -1,5 +1,7 @@
-var menuItems = document.querySelectorAll(".item.with-delay");
 var timeout;
+
+// TODO: FUNCIÓN PARA EL MENÚ DESPLEGABLE DE "MI CUENTA"
+var menuItems = document.querySelectorAll(".item.with-delay");
 
 function handleMouseEnter(event) {
   clearTimeout(timeout);
@@ -26,9 +28,10 @@ function handleMouseLeave(event) {
 menuItems.forEach(function (item) {
   item.addEventListener("mouseenter", handleMouseEnter);
   item.addEventListener("mouseleave", handleMouseLeave);
-  item.addEventListener("mouseenter", handleMouseEnter2);
-  item.addEventListener("mouseleave", handleMouseLeave2)
 });
+
+// TODO: FUNCIÓN PARA EL MENÚ DESPLEGABLE DE LAS SECCIONES "CATEGORÍAS"
+var menuCats = document.querySelectorAll(".cat.with-delay");
 
 function handleMouseEnter2(event) {
   clearTimeout(timeout);
@@ -51,3 +54,8 @@ function handleMouseLeave2(event) {
     subCategorie.classList.remove("active");
   }, 250);
 }
+
+menuCats.forEach(function (cat) {
+  cat.addEventListener("mouseenter", handleMouseEnter2);
+  cat.addEventListener("mouseleave", handleMouseLeave2);
+});
