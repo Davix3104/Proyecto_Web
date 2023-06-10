@@ -8,7 +8,7 @@
 }
 
 body {
-  background: url("https://www.xtrafondos.com/descargar.php?id=6560&resolucion=3840x2160")
+  background: url("../images/FondoDonGil2.jpg")
     no-repeat;
   background-position: unset;
   background-size: cover;
@@ -38,7 +38,7 @@ p:hover {
 /*--APARTADO DE INICIO DE SESIÓN--*/
 
 .login__container {
-  background: transparent;
+  background: rgba(34,34,34,0.75);
   backdrop-filter: blur(8px);
   border-radius: 12px;
   box-shadow: -5px 5px 5px rgb(138, 43, 226, 0.2);
@@ -161,7 +161,7 @@ input[type="submit"]:hover {
 .register__container {
   display: none;
   text-align: center;
-  background: transparent;
+  background: rgba(34,34,34,0.75);
   backdrop-filter: blur(8px);
   border-radius: 12px;
   box-shadow: -5px 5px 5px rgb(138, 43, 226, 0.2);
